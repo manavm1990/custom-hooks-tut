@@ -1,3 +1,38 @@
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { monokaiSublime } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
 export default function App() {
-  return <h1 className="my-3 text-center text-8xl font-black">Hello World</h1>;
+  return (
+    <>
+      <h1 className="mt-4 mb-8 text-center text-xl font-black text-white">
+        Copy 2 Clipboard Button Demo
+      </h1>
+      <div className="flex justify-center">
+        <SyntaxHighlighter
+          language="javascript"
+          style={monokaiSublime}
+          customStyle={{ padding: "2rem" }}
+          className="rounded-sm"
+        >
+          {`export default function App() {
+  return (
+    <>
+      <h1 className="mt-4 mb-8 text-center text-xl font-black text-white">
+        Copy 2 Clipboard Button Demo
+      </h1>
+      <div className="flex justify-center">
+        <SyntaxHighlighter
+          language="javascript"
+          style={monokaiSublime}
+          customStyle={{ padding: "2rem" }}
+          className="rounded-sm"
+        >
+        👨🏾‍💻
+        </SyntaxHighlighter>
+      </div>
+    </>`}
+        </SyntaxHighlighter>
+      </div>
+    </>
+  );
 }

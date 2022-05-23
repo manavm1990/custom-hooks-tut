@@ -7,7 +7,13 @@ export default function App() {
       <h1 className="mt-4 mb-8 text-center text-xl font-black text-white">
         Copy 2 Clipboard Button Demo
       </h1>
-      <div className="flex justify-center">
+      <div className="place-center grid grid-flow-row auto-rows-max justify-center drop-shadow-sm">
+        <button
+          type="button"
+          className="relative top-11 right-2 justify-self-end text-4xl"
+        >
+          📋
+        </button>
         <SyntaxHighlighter
           language="javascript"
           style={monokaiSublime}

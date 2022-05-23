@@ -10,7 +10,7 @@ export default function App() {
       <div className="place-center grid grid-flow-row auto-rows-max justify-center drop-shadow-sm">
         <button
           type="button"
-          className="relative top-11 right-2 justify-self-end text-4xl"
+          className="relative top-11 right-2 transform justify-self-end text-4xl drop-shadow transition hover:scale-110 motion-reduce:hover:transform-none hover:motion-reduce:transition-none"
         >
           📋
         </button>
